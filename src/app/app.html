@@ -1,0 +1,23 @@
+<ion-menu [content]="content">
+  <ion-header >
+    <ion-toolbar>
+      <ion-title style = " background-image: linear-gradient(45deg,#9fbaa8,#31354c);">Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content style = " background-image: linear-gradient(45deg,#9fbaa8,#31354c);">
+    <img src="../assets/imgs/logo.png">
+    <span style="font-size:150%;text-align:center"  >Babacar sylla</span> 
+      <ion-list>
+    <button menuClose ion-item (click)="gotohome1()" style = " background-image: linear-gradient(45deg,#9fbaa8,#31354c);"><ion-icon name="home"></ion-icon> Accueil</button>
+    <button menuClose ion-item (click)="gotocompetence1()" style = " background-image: linear-gradient(45deg,#9fbaa8,#31354c);">  <ion-icon name="stats"></ion-icon> Compétence</button>
+    <button menuClose ion-item (click)="gotoportfolio1()" style = " background-image: linear-gradient(45deg,#9fbaa8,#31354c);">  <ion-icon name="photos"></ion-icon> Portfolio</button>
+  
+      
+     
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

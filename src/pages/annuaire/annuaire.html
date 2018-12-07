@@ -1,0 +1,51 @@
+<!--
+  Generated template for the AnnuairePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Projet annuaire</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>
+
+        <h1 class="t1" text-center> Annuaire de film</h1>
+      </ion-card-title>
+      <h1 text-center>Resume</h1>
+      <p class="p1" text-center>
+        <br>
+        un groupe de 5 (Babacar Sylla, Cherif Gueye, Mamadou Faye, Fatoumata B Touré et moi) le projet à débuter le
+        15/10/2018 et rendu le 19/10/2018 L’objectif de ce projet était de créer un annuaire de film de type
+        "allociné". Cherif et moi nous étions chargées de créer un fichier csv avec le titre, la description, l’année
+        de sortie, le genre et le réalisateur du film puis d’insérer le csv dans MySQL pendant que les autres étaient
+        chargés de faire un modèle conceptuel de données et aussi de trouver toutes les informations dont on avait
+        besoin pour les films choisit. Au niveau du développement on devait travailler sur le MVC Cherif était le
+        Modèle, Babacar le vu, moi le Contrôleur Mamadou et Fatoumata de l’ergonomie.
+      </p>
+    </ion-card-content>
+
+    <ion-item>
+      <ion-icon name='ionitron' item-start style="color: #55acee"></ion-icon>
+      Technologie utilisée
+      <ion-badge item-end>HTML,CSS,PHP,TWIG,MYSQL</ion-badge>
+    </ion-item>
+
+    <ion-item  (click)="gotocolloborateur()">
+      <ion-icon name='people' item-start style="color: #55acee"></ion-icon>
+      Colloborateur
+      <ion-badge item-end>4</ion-badge>
+    </ion-item>
+
+    <img src="../../assets/imgs/annuaire.png" />
+
+
+  </ion-card>
+
+</ion-content>
